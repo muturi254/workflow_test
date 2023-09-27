@@ -5,4 +5,7 @@ on:
       - main
 
 jobs:
-  
+  test_run:
+    steps:
+      - name: hello world
+        run: "Hello world"
