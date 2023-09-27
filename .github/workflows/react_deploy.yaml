@@ -1,0 +1,8 @@
+name: React deployment
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  
