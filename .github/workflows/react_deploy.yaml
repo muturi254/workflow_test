@@ -10,3 +10,24 @@ jobs:
     steps:
       - name: hello-world
         run: echo "Hello world"
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repoitory
+        uses: actions/checkout@v3
+
+      - name: set up node environment
+        uses: action/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      - name: install dependancies
+        run: npm ci
+
+      - name: build project
+        run: npm build
+
+      - name: Deploy
+        uses: tanwanimohit/deploy-react-to-ghpages@v1.0.2
+

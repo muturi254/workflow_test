@@ -1,6 +1,7 @@
 {
   "name": "workflow_test",
   "private": true,
+  "homepage": "https://muturi254.github.io/workflow_test",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
